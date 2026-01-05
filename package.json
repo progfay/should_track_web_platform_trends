@@ -1,0 +1,23 @@
+{
+	"name": "slide-template",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "slidev build",
+		"dev": "slidev --open"
+	},
+	"slidev": {
+		"defaults": {
+			"fonts": {
+				"mono": "Fira Code",
+				"sans": "Avenir Next",
+				"local": "Avenir Next"
+			}
+		}
+	},
+	"dependencies": {
+		"@slidev/cli": "52.10.1",
+		"@slidev/types": "52.10.1",
+		"vue": "3.5.25"
+	}
+}
