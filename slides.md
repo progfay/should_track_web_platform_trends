@@ -1,8 +1,5 @@
 ---
 title: FE エンジニアは Web Platform 動向を追うべきか？
-info: |
-  TBD
-
 theme: ./
 class: text-center
 transition: null
@@ -20,8 +17,8 @@ colorSchema: dark
 
 <p style="color: #A5A5A1">
   2026.01.20 |
-  <a href="https://findy.connpass.com/event/380541/" style="color: #A5A5A1">Findy TECH BATON</a> |
-  <a href="https://x.com/progfay" style="color: #A5A5A1">@progfay</a>
+  <a href="https://findy.connpass.com/event/380541/" target="_blank" rel="noreferrer" style="color: #A5A5A1">Findy TECH BATON</a> |
+  <a href="https://x.com/progfay" target="_blank" rel="noreferrer" style="color: #A5A5A1">@progfay</a>
 </p>
 
 ---
