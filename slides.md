@@ -1,5 +1,7 @@
 ---
 title: FE エンジニアは Web Platform 動向を追うべきか？
+titleTemplate: "%s | progfay"
+author: progfay
 theme: ./
 class: text-center
 transition: null
@@ -23,6 +25,7 @@ colorSchema: dark
 
 ---
 layout: self-intro
+preload: true
 ---
 
 - Web Frontend Engineer
