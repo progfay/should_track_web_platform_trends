@@ -1,447 +1,302 @@
 ---
-title: Welcome to Slidev
+title: FE エンジニアは Web Platform 動向を追うべきか？
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+  TBD
 
 theme: ./
-# apply UnoCSS classes to the current slide
 class: text-center
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
+transition: null
 mdc: true
-# duration of the presentation
-duration: 35min
+duration: 12min
+colorSchema: dark
 ---
 
-# Welcome to Slidev
+<h1 style="font-size: 3rem">
+  FE エンジニアは
+  <span style="display: inline flow-root">
+    Web Platform 動向を追うべきか？
+  </span>
+</h1>
 
-Presentation slides for developers
+<p style="color: #A5A5A1">
+  2026.01.20 |
+  <a href="https://findy.connpass.com/event/380541/" style="color: #A5A5A1">Findy TECH BATON</a> |
+  <a href="https://x.com/progfay" style="color: #A5A5A1">@progfay</a>
+</p>
 
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
-</div>
+---
+layout: self-intro
+---
 
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
+- Web Frontend Engineer
+- 趣味で Web の動向を追っかけている
+- 🆕 趣味: スマホのアプリを消す
+
+---
+layout: statement
+---
+
+## Web Platform の動向、追ってますか？
+
+---
+layout: default-with-message
+---
+
+## Web 動向って何だっけ？
+
+※個人的な定義です。
+
+- **Proposal**: どのような機能が提案されているのか
+- **Discussion**: どのような議論がされているか
+- **Shipment**: どのような機能がブラウザに実装されるか
+
+プロダクト開発に一番影響するのは **Shipment**
+
+---
+
+## Shipment
+
+新しく公開された API などがプロダクトで使える！
+
+<div style="display: flex; justify-content: center">
+  <a href="https://developer.chrome.com/blog/new-in-chrome-144?hl=ja" target="_blank" rel="noreferrer">
+    <img
+      src="/Chrome144.png"
+      alt="Chrome 144 から `::search-text`, `<geolocation>`, Temporal API が利用可能になった。"
+      style="height: 25rem" />
   </a>
 </div>
 
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
 ---
-transition: fade-out
+layout: default-with-message
 ---
 
-# What is Slidev?
+## Major Browsers
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+- Apple Safari (macOS / iOS)
+- Google Chrome (desktop / Android)
+- Microsoft Edge (desktop)
+- Mozilla Firefox (desktop and Android)
+- etc...
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
--->
+これらの Shipment をそれぞれ追うのは大変...
 
 ---
-transition: slide-up
-level: 2
+layout: statement
+tile: Introduce Baseline
 ---
 
-# Navigation
-
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
-
-## Keyboard Shortcuts
-
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
-
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+<a href="https://web-platform-dx.github.io/web-features/" target="_blank" rel="noreferrer">
+  <img
+    src="/Baseline.png"
+    alt="Shipment を追うのに便利な Baseline について紹介します。"
+    style="margin: auto; height: 5rem" />
+</a>
 
 ---
-layout: two-cols
-layoutClass: gap-16
----
 
-# Table of contents
+## What's Baseline?
 
-You can use the `Toc` component to generate a table of contents for your slides:
+> Baseline （ベースライン）は、ブラウザー間で動作するウェブプラットフォームの機能を確認します。
+>
+> Baseline は、サイトの訪問者に互換性の問題を引き起こす可能性が低くなった時期を示すことで、その機能を使用するタイミングを決定するのに役立ちます。
 
-```html
-<Toc minDepth="1" maxDepth="1" />
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
-
-::right::
-
-<Toc text-sm minDepth="1" maxDepth="2" />
+ref. [Baseline (compatibility) - Glossary | MDN](https://developer.mozilla.org/ja/docs/Glossary/Baseline/Compatibility)
 
 ---
-layout: image-right
-image: https://cover.sli.dev
----
 
-# Code
+## Baseline Status
 
-Use code snippets and get the highlighting directly, and even types hover!
+![Limited availability](https://developer.mozilla.org/ja/docs/Glossary/Baseline/Compatibility/low.png)
 
-```ts [filename-example.ts] {all|4|6|6-7|9|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-import { computed, ref } from 'vue'
+![Newly Available](https://developer.mozilla.org/ja/docs/Glossary/Baseline/Compatibility/limited.png)
 
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
+![Widely Available](https://developer.mozilla.org/ja/docs/Glossary/Baseline/Compatibility/high.png)
 
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/layoutHelper.ts#resolveAssetUrl
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
-<style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
+ref. [Baseline (compatibility) - Glossary | MDN](https://developer.mozilla.org/ja/docs/Glossary/Baseline/Compatibility#baseline_badges)
 
 ---
-level: 2
+
+## どのタイミングから使う？
+
+- 一部の Major Browser でのみ Ship された
+  - 流石に時期尚早感がある
+  - 将来、機能が消える可能性もある
+
+- 全 Major Browser で Ship された
+  - 「最新 ver. に更新して」が可能に
+  - とはいえ、まだ多くの環境では使えない
+
+- 全 Major Browser で Ship されてだいぶ経った
+  - どれくらい時間が経てばいい？
+  - 古いブラウザはサポートしない？
+
 ---
 
-# Shiki Magic Move
+## 基準を定めている現場もあるかも
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
+- サポートするブラウザについて公開していたり
+- 内部では、より広いブラウザをサポートしようとしていたり
+  - [Browserslist](https://github.com/browserslist/browserslist)
 
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
+```json
+{
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "not dead"
   ]
 }
-</script>
 ```
-````
 
 ---
 
-# Components
+## どうやって基準を設定する？
 
-<div grid="~ cols-2 gap-4">
-<div>
+- プロダクトの特性を見極めて設定するのがベスト
+  - ユーザーが使うブラウザと version の分布は？
+  - 未実装のブラウザではどれくらい困る？
+  - etc...
 
-You can use Vue components directly inside your slides.
+- でも見極めってめっちゃ難しい
+  - リリース前では判断するための情報が足りない
+  - そもそもあんまり詳しくない
+  - (ぶっちゃけめんどくさい...)
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
+---
+layout: statement
+tile: Re-introduce Baseline
+---
 
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
+<a href="https://web-platform-dx.github.io/web-features/" target="_blank" rel="noreferrer">
+  <img
+    src="/Baseline.png"
+    alt="そんなあなたには Baseline がオススメ！"
+    style="margin: auto; height: 5rem" />
+</a>
 
 ---
 
-# Clicks Animations
+## Baseline: Newly → Widely
 
-You can add `v-click` to elements to add a click animation.
+Newly Available になってから 30 ヶ月後に Widely Available になる。
 
-<div v-click>
+> この広く利用されている線が、すべての人にとって正確であるとは限らないことは承知しています。
+>
+> しかし、ブラウザ バージョンの導入に関する利用可能なデータを調べたところ、 **ほとんどの機能は、世界中の約 95% のユーザーが利用できるようになるまでに 30 か月もかからないことがわかりました。**
+> この期間よりもずっと早く機能をご使用になっても問題ないかもしれませんが、相互運用から 30 か月が経過すると、その機能を使用できなくなる可能性は低くなります。
 
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
-</div>
-
-<br>
-
-<v-click>
-
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div mt-20 v-click>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
-
-</div>
+ref. [ベースラインの定義の更新  |  Blog  |  web.dev](https://web.dev/blog/baseline-definition-update?hl=ja)
 
 ---
 
-# Diagrams
+## Baseline in your project
 
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
+> Baseline を使用すると、以下のことが可能になります。
+> - **サイトやアプリケーションで使用する Web プラットフォーム機能に関する意思決定**
+> - 他の人に、機能がブラウザ間で動作するかどうかを伝える
 
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
+ref. [Baseline in your project | Baseline](https://web-platform-dx.github.io/web-features/use-baseline/) (Translated by [Nani Translate](https://nani.now))
 
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
+<hr style="border-color: #A5A5A1; margin: 3rem 0" />
 
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
+```json {2}
+{
+  "browserslist": ["baseline widely available"]
 }
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
 ```
 
-</div>
-
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
+ref. [Browserslist でベースラインを使用する  |  Articles  |  web.dev](https://web.dev/articles/use-baseline-with-browserslist?hl=ja)
 
 ---
 
-# Monaco Editor
+## どうやって Web Platform 動向を追えばいい？
 
-Slidev provides built-in Monaco Editor support.
+プロダクト開発においては **Baseline を追うだけでも十分**
 
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
+- [Baseline 2025](https://web.dev/baseline/2025)
+- [New to the web platform in December](https://web.dev/blog/web-platform-12-2025)
+- [November 2025 Baseline monthly digest](https://web.dev/blog/baseline-digest-nov-2025)
 
 ---
-layout: center
-class: text-center
+
+## Baseline 以外は追わなくて良い？
+
+Shipment には 3 パターンある
+
+1. 何も影響しない Shipment
+
+2. 対応すると嬉しい Shipment
+   - Baseline を追うことで発見できる
+
+3. **対応しないとヤバい Shipment**
+   - Breaking Change: [3rd Party Cookie Deprecation](https://blog.chromium.org/2019/05/improving-privacy-and-security-on-web.html) (`SameSite=Lax`)
+   - Security Updates: [Spectre / Meltdown](https://developer.chrome.com/blog/meltdown-spectre)
+   - etc...
+
 ---
 
-# Learn More
+## Don't Break the Web
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
+> オープンなウェブ標準の周りで耳にするもう一つの言葉は「ウェブを壊さない」です。
+>
+> この考えは、導入される新しいウェブ技術は、過去に行われたものが下位互換性を持ち（つまり、古いウェブサイトも引き続き動作する）、上位互換性がある（将来の技術は、現在あるものと互換性がある）べきだというものです。
 
-<PoweredBySlidev mt-10 />
+ref. [ウェブ標準モデル - ウェブ開発の学習 | MDN](https://developer.mozilla.org/ja/docs/Learn_web_development/Getting_started/Web_standards/The_web_standards_model#%E3%82%A6%E3%82%A7%E3%83%96%E3%82%92%E5%A3%8A%E3%81%95%E3%81%AA%E3%81%84)
+
+<hr style="border-color: #A5A5A1; opacity: 0; margin: 1.5rem 0" />
+
+- しかし実際には Breaking Change が起きる
+- これは「ユーザーの安全性」を毀損すると判断された場合に起きる
+- Breaking Change は十分に議論された上で Ship される
+
+---
+layout: default-with-message
+---
+
+## Web 動向って何だっけ？
+
+<p style="position: absolute; margin: 0; top: 1rem; right: -3.25rem; background-color: #A5A5A1; padding: 0.6rem 0.5rem 0.4rem; width: 12rem; text-align: center; vertical-align: middle; transform: rotate(35deg); font-weight: bold; font-size: 1.35rem">
+  再掲
+</p>
+
+※個人的な定義です。
+
+- **Proposal**: どのような機能が提案されているのか
+- **Discussion**: どのような議論がされているか
+- **Shipment**: どのような機能がブラウザに実装されるか
+
+Proposal, Discussion から Web Platform が進む方向性が予測できる
+
+---
+
+## まとめ
+
+- Web Platform 動向はまず Baseline を追うところから始めよう
+  - [Baseline 2025](https://web.dev/baseline/2025)
+  - [New to the web platform in December](https://web.dev/blog/web-platform-12-2025)
+  - [November 2025 Baseline monthly digest](https://web.dev/blog/baseline-digest-nov-2025)
+
+- 新機能を利用するかの判断基準はプロダクトの特性を見極めて設定するのがベスト
+
+- でも、大変なら Baseline Widely Available を活用するのも良い
+
+- Baseline に加えて提案や議論も追うと Web Platform が進む方向性が予測できる
+  - [`@progfay`](https://x.com/progfay) はこれを趣味として楽しんでいます！
+
+---
+
+## おまけ: [`@progfay`](https://x.com/progfay) の新機能利用基準
+
+- 基本戦略: 不要な挑戦はしない
+  - Feature Detection での分岐は fallback との二重管理になってしまう
+  - Transpile や Polyfill で Bundle Size 増やしてもユーザーは嬉しくない
+  - 開発効率の向上やバグの低減につながるなら要検討
+
+- リリースした後でも、使えないユーザーが多そうなら修正する
+  - `Array.prototype.at` や `OffscreenCanvas` は Widely Available
+  - しかし Sentry などに "OffscreenCanvas is not defined" などのエラーが上がってくる
+  - 数が多そうならユーザーの不利益になるので即修正
+
+- 新しい機能を使いたい気持ちをグッと抑えて Widely Available を虎視眈々と待っている
+  - [`field-sizing: content`](https://developer.mozilla.org/ja/docs/Web/CSS/Reference/Properties/field-sizing) と [Navigation API](https://developer.mozilla.org/en-US/docs/Web/API/Navigation_API) 早く来てくれ...！

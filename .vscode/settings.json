@@ -1,3 +1,7 @@
 {
-	"cSpell.words": ["Slidev"]
+	"cSpell.words": [
+		"Findy",
+		"Slidev"
+	],
+	"biome.enabled": false
 }
