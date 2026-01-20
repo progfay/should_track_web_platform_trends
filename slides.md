@@ -30,7 +30,7 @@ preload: true
 
 - Web Frontend Engineer
 - 趣味で Web の動向を追っかけている
-- 🆕 趣味: スマホのアプリを消す
+- トラックボール付き Cornix を熱望している
 
 ---
 layout: statement
@@ -42,7 +42,7 @@ layout: statement
 layout: default-with-message
 ---
 
-## Web 動向って何だっけ？
+## Web Platform 動向って何だっけ？
 
 ※個人的な定義です。
 
@@ -76,7 +76,7 @@ layout: default-with-message
 - Apple Safari (macOS / iOS)
 - Google Chrome (desktop / Android)
 - Microsoft Edge (desktop)
-- Mozilla Firefox (desktop and Android)
+- Mozilla Firefox (desktop / Android)
 - etc...
 
 これらの Shipment をそれぞれ追うのは大変...
@@ -94,6 +94,8 @@ tile: Introduce Baseline
 </a>
 
 ---
+layout: default-with-message
+---
 
 ## What's Baseline?
 
@@ -102,6 +104,8 @@ tile: Introduce Baseline
 > Baseline は、サイトの訪問者に互換性の問題を引き起こす可能性が低くなった時期を示すことで、その機能を使用するタイミングを決定するのに役立ちます。
 
 ref. [Baseline (compatibility) - Glossary | MDN](https://developer.mozilla.org/ja/docs/Glossary/Baseline/Compatibility)
+
+ある機能がどれだけのブラウザで利用可能かを測る指標
 
 ---
 
@@ -121,7 +125,6 @@ ref. [Baseline (compatibility) - Glossary | MDN](https://developer.mozilla.org/j
 
 - 一部の Major Browser でのみ Ship された
   - 流石に時期尚早感がある
-  - 将来、機能が消える可能性もある
 
 - 全 Major Browser で Ship された
   - 「最新 ver. に更新して」が可能に
@@ -190,33 +193,13 @@ ref. [ベースラインの定義の更新  |  Blog  |  web.dev](https://web
 
 ---
 
-## Baseline in your project
-
-> Baseline を使用すると、以下のことが可能になります。
-> - **サイトやアプリケーションで使用する Web プラットフォーム機能に関する意思決定**
-> - 他の人に、機能がブラウザ間で動作するかどうかを伝える
-
-ref. [Baseline in your project | Baseline](https://web-platform-dx.github.io/web-features/use-baseline/) (Translated by [Nani Translate](https://nani.now))
-
-<hr style="border-color: #A5A5A1; margin: 3rem 0" />
-
-```json {2}
-{
-  "browserslist": ["baseline widely available"]
-}
-```
-
-ref. [Browserslist でベースラインを使用する  |  Articles  |  web.dev](https://web.dev/articles/use-baseline-with-browserslist?hl=ja)
-
----
-
 ## どうやって Web Platform 動向を追えばいい？
 
 プロダクト開発においては **Baseline を追うだけでも十分**
 
 - [Baseline 2025](https://web.dev/baseline/2025)
-- [New to the web platform in December](https://web.dev/blog/web-platform-12-2025)
 - [November 2025 Baseline monthly digest](https://web.dev/blog/baseline-digest-nov-2025)
+- [New to the web platform in December](https://web.dev/blog/web-platform-12-2025)
 
 ---
 
@@ -224,7 +207,7 @@ ref. [Browserslist でベースラインを使用する  |  Articles  |  web
 
 Shipment には 3 パターンある
 
-1. 何も影響しない Shipment
+1. プロダクトに影響しない Shipment
 
 2. 対応すると嬉しい Shipment
    - Baseline を追うことで発見できる
@@ -254,7 +237,7 @@ ref. [ウェブ標準モデル - ウェブ開発の学習 | MDN](https://develop
 layout: default-with-message
 ---
 
-## Web 動向って何だっけ？
+## Web Platform 動向って何だっけ？
 
 <p style="position: absolute; margin: 0; top: 1rem; right: -3.25rem; background-color: #A5A5A1; padding: 0.6rem 0.5rem 0.4rem; width: 12rem; text-align: center; vertical-align: middle; transform: rotate(35deg); font-weight: bold; font-size: 1.35rem">
   再掲
@@ -274,14 +257,14 @@ Proposal, Discussion から Web Platform が進む方向性が予測できる
 
 - Web Platform 動向はまず Baseline を追うところから始めよう
   - [Baseline 2025](https://web.dev/baseline/2025)
-  - [New to the web platform in December](https://web.dev/blog/web-platform-12-2025)
   - [November 2025 Baseline monthly digest](https://web.dev/blog/baseline-digest-nov-2025)
+  - [New to the web platform in December](https://web.dev/blog/web-platform-12-2025)
 
-- 新機能を利用するかの判断基準はプロダクトの特性を見極めて設定するのがベスト
+- 新機能を利用するかの判断基準
+  - プロダクトの特性を見極めて設定するのがベスト
+  - 大変なら Baseline Widely Available を活用するのも良い
 
-- でも、大変なら Baseline Widely Available を活用するのも良い
-
-- Baseline に加えて提案や議論も追うと Web Platform が進む方向性が予測できる
+- Proposal や Discussion も追うと Web Platform が進む方向性が予測できる
   - [`@progfay`](https://x.com/progfay) はこれを趣味として楽しんでいます！
 
 ---
