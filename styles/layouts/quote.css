@@ -1,0 +1,8 @@
+.slidev-layout.quote {
+	display: grid;
+	height: 100%;
+
+	h1 + p {
+		margin-top: 0.5rem;
+	}
+}

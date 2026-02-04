@@ -1,0 +1,11 @@
+.slidev-layout.statement {
+	display: grid;
+	height: 100%;
+	text-align: center;
+
+	h1 {
+		font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 700;
+	}
+}

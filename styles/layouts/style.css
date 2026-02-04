@@ -1,0 +1,114 @@
+@import url("./cover.css");
+@import url("./default-with-message.css");
+@import url("./fact.css");
+@import url("./intro.css");
+@import url("./quote.css");
+@import url("./section.css");
+@import url("./self-intro.css");
+@import url("./statement.css");
+
+.slidev-layout {
+	font-size: 1.2rem;
+	color: #F2F9FC;
+	background-color: #14161A;
+
+	p {
+		margin: 0;
+	}
+
+	> :not(:is(h1, h2, h3, h4, h5, h6):first-child) + * {
+		margin-top: 1rem;
+	}
+
+	/* bypass `!important` of https://github.com/slidevjs/slidev/blob/9d30081469cd7ed08586bb8973649a88567cfa25/packages/client/styles/code.css#L30 */
+	> :not(:is(h1, h2, h3, h4, h5, h6):first-child) + .slidev-code-wrapper {
+		margin-top: 1rem !important;
+	}
+
+	:is(ol, ul):has(> li > :is(ol, ul)) {
+		gap: 1rem;
+	}
+
+	li > :is(ol, ul) {
+		margin-top: 0.5rem;
+	}
+
+	:is(h1, h2, h3, h4, h5, h6):not(:last-child) {
+		margin-bottom: 1.5rem;
+	}
+
+	h1 {
+		font-size: 2.25rem;
+    line-height: 2.5rem;
+	}
+
+	h2 {
+		font-size: 1.875rem;
+    line-height: 2.25rem;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+    line-height: 2rem;
+	}
+
+	h4 {
+		font-size: 1.25rem;
+    line-height: 1.75rem;
+	}
+
+	h5 {
+		font-size: 1rem;
+    line-height: 1.5rem;
+	}
+
+	h6 {
+		margin-left: -0.05em;
+    padding-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+	}
+
+	h6:not(.opacity-100) {
+		opacity: 0.4;
+	}
+
+	ul, ol {
+		display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+	}
+
+	a {
+		color: #80B4EF;
+		border-bottom: none;
+	}
+
+	blockquote {
+		border: none;
+		border-radius: 0 0.25rem 0.25rem 0;
+		position: relative;
+		padding-left: 1rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		font-size: 1rem;
+		display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+		&::before {
+			content: "";
+			width: 4px;
+			height: 100%;
+			display: block;
+			background: light-dark(darkgray, lightgray);
+			position: absolute;
+			left: 0;
+			top: 0;
+			border-radius: 2px;
+		}
+	}
+}

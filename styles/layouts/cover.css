@@ -1,0 +1,9 @@
+.slidev-layout.cover {
+	display: grid;
+	height: 100%;
+
+	h1 {
+		font-size: 3.75rem;
+    line-height: 5rem;
+	}
+}
