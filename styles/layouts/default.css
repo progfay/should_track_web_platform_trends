@@ -1,8 +1,8 @@
-.slidev-layout.default-with-message {
+.slidev-layout.default {
 	padding-left: 3.5rem;
 	padding-right: 3.5rem;
 
-	> :last-child {
+	.message {
 		margin-left: -3.5rem;
 		margin-right: -3.5rem;
 

@@ -39,8 +39,6 @@ layout: statement
 ## Web Platform の動向、追ってますか？
 
 ---
-layout: default-with-message
----
 
 ## Web Platform 動向って何だっけ？
 
@@ -49,6 +47,8 @@ layout: default-with-message
 - **Proposal**: どのような機能が提案されているのか
 - **Discussion**: どのような議論がされているか
 - **Shipment**: どのような機能がブラウザに実装されるか
+
+::message::
 
 プロダクト開発に一番影響するのは **Shipment**
 
@@ -68,8 +68,6 @@ layout: default-with-message
 </div>
 
 ---
-layout: default-with-message
----
 
 ## Major Browsers
 
@@ -78,6 +76,8 @@ layout: default-with-message
 - Microsoft Edge (desktop)
 - Mozilla Firefox (desktop / Android)
 - etc...
+
+::message::
 
 これらの Shipment をそれぞれ追うのは大変...
 
@@ -94,8 +94,6 @@ tile: Introduce Baseline
 </a>
 
 ---
-layout: default-with-message
----
 
 ## What's Baseline?
 
@@ -104,6 +102,8 @@ layout: default-with-message
 > Baseline は、サイトの訪問者に互換性の問題を引き起こす可能性が低くなった時期を示すことで、その機能を使用するタイミングを決定するのに役立ちます。
 
 ref. [Baseline (compatibility) - Glossary | MDN](https://developer.mozilla.org/ja/docs/Glossary/Baseline/Compatibility)
+
+::message::
 
 ある機能がどれだけのブラウザで利用可能かを測る指標
 
@@ -234,8 +234,6 @@ ref. [ウェブ標準モデル - ウェブ開発の学習 | MDN](https://develop
 - Breaking Change は十分に議論された上で Ship される
 
 ---
-layout: default-with-message
----
 
 ## Web Platform 動向って何だっけ？
 
@@ -248,6 +246,8 @@ layout: default-with-message
 - **Proposal**: どのような機能が提案されているのか
 - **Discussion**: どのような議論がされているか
 - **Shipment**: どのような機能がブラウザに実装されるか
+
+::message::
 
 Proposal, Discussion から Web Platform が進む方向性が予測できる
 
