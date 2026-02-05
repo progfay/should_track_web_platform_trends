@@ -227,27 +227,25 @@ Shipment には 3 パターンある
 
 ref. [ウェブ標準モデル - ウェブ開発の学習 | MDN](https://developer.mozilla.org/ja/docs/Learn_web_development/Getting_started/Web_standards/The_web_standards_model#%E3%82%A6%E3%82%A7%E3%83%96%E3%82%92%E5%A3%8A%E3%81%95%E3%81%AA%E3%81%84)
 
-<hr style="border-color: #A5A5A1; opacity: 0; margin: 1.5rem 0" />
+<Break />
 
 - しかし実際には Breaking Change が起きる
 - これは「ユーザーの安全性」を毀損すると判断された場合に起きる
 - Breaking Change は十分に議論された上で Ship される
 
 ---
-layout: default-with-message
----
 
 ## Web Platform 動向って何だっけ？
 
-<p style="position: absolute; margin: 0; top: 1rem; right: -3.25rem; background-color: #A5A5A1; padding: 0.6rem 0.5rem 0.4rem; width: 12rem; text-align: center; vertical-align: middle; transform: rotate(35deg); font-weight: bold; font-size: 1.35rem">
-  再掲
-</p>
+<Label>再掲</Label>
 
 ※個人的な定義です。
 
 - **Proposal**: どのような機能が提案されているのか
 - **Discussion**: どのような議論がされているか
 - **Shipment**: どのような機能がブラウザに実装されるか
+
+::message::
 
 Proposal, Discussion から Web Platform が進む方向性が予測できる
 
