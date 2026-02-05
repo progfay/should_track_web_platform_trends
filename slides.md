@@ -234,6 +234,8 @@ ref. [ウェブ標準モデル - ウェブ開発の学習 | MDN](https://develop
 - Breaking Change は十分に議論された上で Ship される
 
 ---
+layout: default-with-message
+---
 
 ## Web Platform 動向って何だっけ？
 
@@ -246,8 +248,6 @@ ref. [ウェブ標準モデル - ウェブ開発の学習 | MDN](https://develop
 - **Proposal**: どのような機能が提案されているのか
 - **Discussion**: どのような議論がされているか
 - **Shipment**: どのような機能がブラウザに実装されるか
-
-::message::
 
 Proposal, Discussion から Web Platform が進む方向性が予測できる
 
