@@ -7,6 +7,8 @@ class: text-center
 transition: null
 mdc: true
 duration: 12min
+htmlAttrs:
+  lang: ja
 colorSchema: dark
 ---
 
