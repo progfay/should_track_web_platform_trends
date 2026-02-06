@@ -1,4 +1,5 @@
 @import url("./layouts/index.css");
+@import url("./typography.css");
 
 :root {
   --progfay-blue: #80B4EF;

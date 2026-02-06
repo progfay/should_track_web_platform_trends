@@ -26,7 +26,7 @@ Usage: `<Label :color=""> Content </Label>`
     padding: 0.6rem 0.5rem 0.4rem;
     text-align: center;
     vertical-align: middle;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.35rem;
     width: 12rem;
     background-color: var(--progfay-label-color);

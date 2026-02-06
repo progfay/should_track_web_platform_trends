@@ -1,0 +1,30 @@
+/* ref. https://gist.github.com/tak-dcxi/0f8b924d6dd81aaeb58dc2e287f2ab3a */
+
+@import url("../node_modules/kiso.css/kiso.css");
+
+@layer base {
+  :where(:lang(en)) {
+    font-kerning: normal;
+  }
+
+  :where(:lang(ja)) {
+    font-kerning: none;
+  }
+
+  :where(h1, h2, h3, h4, h5, h6, caption) {
+    font-kerning: normal;
+
+    &:lang(en) {
+      text-wrap: balance;
+    }
+
+    &:lang(ja) {
+      font-feature-settings: "palt";
+
+      @supports (word-break: auto-phrase) {
+        word-break: auto-phrase;
+        text-wrap: balance;
+      }
+    }
+  }
+}
