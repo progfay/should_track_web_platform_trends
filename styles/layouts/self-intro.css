@@ -1,8 +1,12 @@
 .slidev-layout.self-intro {
+	--background-color: #c1d3db;
+	--foreground-color: #05061d;
+	--on-foreground-color: #ffffff;
+
 	display: grid;
 	grid-template-columns: 6fr 4fr;
-	background-color: #c1d3db;
-	color: #05061d;
+	background-color: var(--background-color);
+	color: var(--foreground-color);
 
 	.left {
 		width: 100%;
@@ -17,8 +21,8 @@
 			gap: 1.2rem;
 
 			.real-name {
-				background-color: #05061d;
-				color: #ffffff;
+				background-color: var(--foreground-color);
+				color: var(--on-foreground-color);
 				margin: 0;
 				width: fit-content;
 

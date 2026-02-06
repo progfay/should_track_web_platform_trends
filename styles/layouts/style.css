@@ -11,8 +11,8 @@
 	height: 100%;
 	padding: 2.5rem 3.5rem;
 	font-size: 1.2rem;
-	color: #F2F9FC;
-	background-color: #14161A;
+	color: var(--progfay-foreground);
+	background-color: var(--progfay-background);
 
 	p {
     line-height: 1.5rem;
@@ -78,7 +78,7 @@
 	}
 
 	a {
-		color: var(--slidev-theme-primary);
+		color: var(--progfay-link);
 		border-bottom: none;
 
 		&:hover {
@@ -119,9 +119,7 @@
     line-height: 1.25rem;
 		border-radius: 0 0.25rem 0.25rem 0;
 		position: relative;
-		padding-left: 1rem;
-		padding-top: 0.5rem;
-		padding-bottom: 0.5rem;
+		padding: 0.5rem 1rem;
 		font-size: 1rem;
 		display: flex;
     flex-direction: column;
@@ -150,7 +148,7 @@
 
 		tr {
 			border-bottom-width: 1px;
-			border-color: rgb(156 163 175 / 0.2);
+			border-color: rgb(from var(--progfay-gray) r g b / 0.5);
 		}
 
 		th {

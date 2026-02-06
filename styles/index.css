@@ -1,0 +1,29 @@
+:root {
+  --progfay-blue: #80B4EF;
+  --progfay-red: #DC5E5C;
+  --progfay-black: #14161A;
+  --progfay-white: #F2F9FC;
+  --progfay-gray: #A5A5A1;
+
+  --progfay-background: var(--progfay-black);
+  --progfay-foreground: var(--progfay-white);
+  --progfay-primary: var(--progfay-blue);
+  --progfay-accent: var(--progfay-red);
+  --progfay-link: var(--progfay-blue);
+  --progfay-note: var(--progfay-gray);
+}
+
+.light:root {
+  --progfay-blue: #1577D8;
+  --progfay-red: #EE0012;
+  --progfay-black: #05061D;
+  --progfay-white: #FFFFFF;
+  --progfay-gray: #9492B0;
+
+  --progfay-background: var(--progfay-white);
+  --progfay-foreground: var(--progfay-black);
+  --progfay-primary: var(--progfay-blue);
+  --progfay-accent: var(--progfay-red);
+  --progfay-link: var(--progfay-blue);
+  --progfay-note: var(--progfay-gray);
+}
