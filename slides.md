@@ -2,6 +2,7 @@
 title: FE エンジニアは Web Platform 動向を追うべきか？
 titleTemplate: "%s | progfay"
 author: progfay
+description: 『TECH BATON in 東京 〜うちのフロントエンド進化のツボ ！コード長持ちのための技術〜』での発表資料です。
 theme: ./
 class: text-center
 transition: null
@@ -9,7 +10,19 @@ mdc: true
 duration: 12min
 htmlAttrs:
   lang: ja
+favicon: "https://github.com/progfay.png"
 colorSchema: dark
+
+# # ref. https://sli.dev/features/seo-meta#configuration
+# seoMeta:
+#   ogImage: ./path/to/og-image.png # (or auto)
+#   ogUrl: https://progfay.github.io/${repo_name}/
+#   twitterCard: summary_large_image
+#   twitterTitle: (same as title)
+#   twitterDescription: (same as description)
+#   twitterImage: same as ogImage
+#   twitterSite: progfay
+#   twitterUrl: https://progfay.github.io/${repo_name}/
 ---
 
 <h1 style="font-size: 3rem">
